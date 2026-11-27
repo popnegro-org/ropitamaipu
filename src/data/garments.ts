@@ -50,7 +50,7 @@ export const garments: Garment[] = photoFiles.map((file, index) => ({
 export function garmentWhatsappMessage(garment: Garment): string {
   return [
     '¡Hola, Ropero Circular!',
-    `Vi la ${garment.name} (código ${garment.id}).`,
+    `Vi la ${garment.name} (código ${garment.id}${garment.size ? `, talle ${garment.size}` : ''}).`,
     '¿Podrían compartirme la información y confirmar su disponibilidad?',
   ].join(' ');
 }
