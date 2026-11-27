@@ -40,9 +40,9 @@ export default function Catalog() {
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-700">Catálogo</p>
-            <h2 className="mt-3 font-display text-4xl leading-tight text-forest-900 sm:text-5xl">Prendas disponibles</h2>
+            <h2 className="mt-3 font-display text-4xl leading-tight text-forest-900 sm:text-5xl">Nuestro catálogo</h2>
             <p className="mt-3 text-forest-800/70" aria-live="polite">
-              {availableCount} {availableCount === 1 ? 'prenda disponible' : 'prendas disponibles'}.
+              {garments.length} {garments.length === 1 ? 'prenda en catálogo' : 'prendas en catálogo'} · {availableCount} disponibles.
             </p>
           </div>
           {garments.length > 0 && (
